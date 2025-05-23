@@ -5,6 +5,10 @@ from tensorflow.keras.models import load_model
 from collections import deque
 import time # To calculate FPS
 
+import tensorflow as tf
+print(tf.__version__)
+print(tf.config.list_physical_devices('GPU'))
+
 # --- Configuration ---
 MODEL_PATH = "MoBiLSTM_model.h5"  # <--- IMPORTANT: SET THIS PATH
 IMAGE_HEIGHT, IMAGE_WIDTH = 64, 64
